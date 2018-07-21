@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="PM_CUDA.cu">
+      <Filter>Elements</Filter>
+    </CudaCompile>
+    <CudaCompile Include="SineKernel.cu">
+      <Filter>Elements</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Elements">
+      <UniqueIdentifier>{a6d924f6-40b0-4ca7-8018-ee322c09c491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{6a511bb3-6d54-4116-9542-8441d76e62da}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Element.cpp">
+      <Filter>Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader_Manager.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GLUT_main.cpp" />
+    <ClCompile Include="Particles.cpp" />
+    <ClCompile Include="SineWave.cpp">
+      <Filter>Elements</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Element.h">
+      <Filter>Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="PM_CUDA.h">
+      <Filter>Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader_Manager.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Particles.h" />
+    <ClInclude Include="SimParams.h" />
+    <ClInclude Include="SineWave.h">
+      <Filter>Elements</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fragment_Shader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Mesh_Vertex_Shader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Particle_Vertex_Shader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
